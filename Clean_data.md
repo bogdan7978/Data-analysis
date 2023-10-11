@@ -1,33 +1,38 @@
 - Checking if a value is null or not
-```
+```python
 pd.isnull(pd.Series([7, np.nan, 2]))
 pd.notnull(pd.Series([7, np.nan, 2]))
 
-can be used as method as well - series.notnull()
-Both return True of False. Works with DataFrames as well
+Can be used as method as well - series.notnull()
+# Both return True of False. Works with DataFrames as well
 ```
 - The sum of null or not null values, returns an integer
-`pd.isnull(series).sum()`
-`pd.notnull(series).sum()`
+```python
+pd.isnull(series).sum()
+pd.notnull(series).sum()
+```
 
 - Drop null values for series
 `series.dropna()` # creates a new series, does not modify the initial one
-- .dropna() used on DataFrames drops every row that contains minimum a null value, only keeps rows with no null values
-- change to axis=1 to drop columns
+- `.dropna()` used on DataFrames drops every row that contains minimum a null value, only keeps rows with no null values
+  change to axis=1 to drop columns
 - Threshold can be used, 'I need x valid values to keep the row/column'
 `df.dropna(thresh=3)`
 
-- Using the .shape() and .info() functions can get you a good picture of null values 
+- Using the `.shape()` and `.info()` functions can get you a good picture of null values 
 
 - Fill the null values
-`s.fillna(0)` **fill the null values with 0**
-`s.fillna(s.mean())` **fill the null values with the mean**
+```python
+s.fillna(0) #fill the null values with 0
+s.fillna(s.mean()) #fill the null values with the mean
+```
 - Front fill and backwards fill
-`s.fillna(method='ffill')`  **fills the null values with the last known value form top**
-`s.fillna(method='bfill')` **fills the null values with the last known value form bottom**
+```python
+s.fillna(method='ffill')  #fills the null values with the last known value form top
+s.fillna(method='bfill') #fills the null values with the last known value form bottom
+```
 
-
-### Finding unique values
+#### Finding unique values
 
 `df.['Sex'].unique()` shows how many different values are
 `df.['Sex'].value_counts()` shows how many values are and counts them
