@@ -136,8 +136,9 @@ plt.grid(False)
 `plt.tight_layout(pad=2) # space between the plots`
 `plt.subplot()` returns `fig and axes`
 
-``python
+```python
 fig, axes = plt.subplot(3, 3, figsize=(12, 9))
 
 axes[0, 0].plot(years, oranges 'o-r')
 plt.tight_layout(pad=2)
+```
