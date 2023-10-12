@@ -103,3 +103,41 @@ plt.hist(flowers_df.1, flowers_df.2, flowers_df.3
 ## Heatmap
 
 `sns.heatmap(flights_df)`
+`sns.heatmap(flights_df, annot=True, cmap='Blues') # `annot` displays the values nr on the map, `cmap` changes the map style
+
+## Display image using matplotlib
+```pyhon
+from PIL import Image
+from urllibrequest import urllib
+urlretreive('img_site_source', 'img_name');
+
+img = Image.open('img_name')
+plt.imshow('img')
+```
+
+- An image can be converted to an 3 dimensional array
+```python
+img_array = np.array(img)
+img_array.shape
+```
+
+- To get rid of the chart around the img
+```pytohn
+plt.axis('off')
+plt.grid(False)
+```
+
+- The img can be sliced to display just a part of it
+`plt.imshow(img_array[125:300, 105:305])`
+
+
+## Plotting multiple charts in a grid
+`plt.subplot(nr_rows, nr_columns);`
+`plt.tight_layout(pad=2) # space between the plots`
+`plt.subplot()` returns `fig and axes`
+
+``python
+fig, axes = plt.subplot(3, 3, figsize=(12, 9))
+
+axes[0, 0].plot(years, oranges 'o-r')
+plt.tight_layout(pad=2)
