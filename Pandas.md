@@ -185,3 +185,6 @@ marvel_df[mask]
 
 - Group by
 `tips_df.groupby('day')[['total_bill']].mean()`
+
+- Change the columns and rows around
+`.pivot(row, column, column)`
