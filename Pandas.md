@@ -45,8 +45,28 @@ X[[0, -1]]
 series2 = pd.to_numeric(series, errors='coerce')
 ```
 
+- CONVERT series of lists to one series
+```python
+s = s.apply(pd.Series).stack().reset_index(drop=True)
+```
+
 - SORT ORDER
 `X = X.sort_values()`  
+
+- ADD new values to a series
+```python
+new_s = pd.concat([s, pd.Series([500, "php"])], ignore_index=True)
+```
+- CREATE subset of series
+```python
+n = 6
+new_s = s[s < n]
+```
+
+- CHANGE order of index
+```python
+s = s.reindex(index = ['B','A','C','D','E'])
+```
 
 ### Boolean or masks
 
