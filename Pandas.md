@@ -40,6 +40,11 @@ X[[0, -1]]
 - CONVERT TO FLOAT
 `pd.Series(X, dtype=float)` 
 
+- CONVERT obj type to numeric
+```python
+series2 = pd.to_numeric(series, errors='coerce')
+```
+
 - SORT ORDER
 `X = X.sort_values()`  
 
