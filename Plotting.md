@@ -28,8 +28,8 @@ plt.yplabel('description')
 plt.title("title of chart")
 plt.legend(['df2', 'df3']);
 ```
--ADD markers to the plot
+- ADD markers to the plot
 `plt.plot(df1, df2, marker=".")
-- Full marker list can be found [here](https://matplotlib.org/stable/api/markers_api.html)
+> Full marker list can be found [here](https://matplotlib.org/stable/api/markers_api.html)
 
 
