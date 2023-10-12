@@ -1,4 +1,4 @@
-#### Plotting with Matplotlib | lines plots
+## Plotting with Matplotlib | lines plots
 
 ```python
 import numpy as np
@@ -48,7 +48,7 @@ plt.legend(['df2', 'df3']);
 - To change the size of the graph
 `plt.figure(figsize(5, 6))`
 
-#### Using seaborn to improve the design
+## Using seaborn to improve the design
 `import seaborn as sns`
 
 - Using predefined [styles](https://seaborn.pydata.org/generated/seaborn.set_style.html)
@@ -57,7 +57,7 @@ plt.legend(['df2', 'df3']);
 - Changing the style using matplotlib 
 `matplotlib.rcParams`
 
-#### Scatter plots
+## Scatter plots
 > Values of 2 variables plotted as 2 points, without being joined by a line
 
 `sns.scatterplot(df1, df2)`
@@ -67,7 +67,7 @@ plt.legend(['df2', 'df3']);
 
 > When using `sns` plot, `plt` funcions can be added, and viceversa
 
-#### Histogram
+## Histogram
 > A histogram is usually used to display one column. It counts how many values fall in a range of the column values using bars
 
 `plt.hist(flowers_df.sepla_width);`
@@ -90,11 +90,16 @@ plt.hist(flowers_df.1, alpha=0.4, bins=5);
 plt.hist(flowers_df.1, flowers_df.2, flowers_df.3
          bins=5, stacked=True);
 ```
-#### Bar charts
+## Bar charts
 
 `plt.bar(years, oranges);`
-> Line chart can be added on the bar chart `plt.plot()`
+> Line can be added on the bar chart `plt.plot()`
 
+- Displaying the mean using seaborn
+`sns.barplot('day', 'total_bill', data=tips_df);` This will automatically calcualte the average, thus not having to use `groupby` and calcualte the mean
+> A `hue` can be added to the chart
+> To make the chart horizontal, change the order of the axis
 
+## Heatmap
 
-
+`sns.heatmap(flights_df)`
