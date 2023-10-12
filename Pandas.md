@@ -180,11 +180,8 @@ marvel_df[mask]
 - Modify 
 `marvel_df.loc['Vision', 'Born'] = 1964`
 
-
 > If your _DatetimeIndex_ is not sorted, you can sort it using the `sort_index()` method
 `df.sort_index(inplace=True)`
 
-### Plotting
-
-- Plot the values of a column
-`df.ColumnName.plot()`
+- Group by
+`tips_df.groupby('day')[['total_bill']].mean()`
