@@ -8,3 +8,4 @@
 - [Pandas](Pandas.md)
 - [Cleaning data](Clean_data.md)
 - [Importing data](Import_data.md)
+- [Plotting graphs](Plotting.md)
