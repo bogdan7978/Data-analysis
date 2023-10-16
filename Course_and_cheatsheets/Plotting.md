@@ -132,12 +132,12 @@ plt.grid(False)
 
 
 ## Plotting multiple charts in a grid
-`plt.subplot(nr_rows, nr_columns);`
+`plt.subplots(nr_rows, nr_columns);`
 `plt.tight_layout(pad=2) # space between the plots`
-`plt.subplot()` returns `fig and axes`
+`plt.subplots()` returns `fig and axes`
 
 ```python
-fig, axes = plt.subplot(3, 3, figsize=(12, 9))
+fig, axes = plt.subplots(3, 3, figsize=(12, 9))
 
 axes[0, 0].plot(years, oranges 'o-r')
 plt.tight_layout(pad=2)
