@@ -34,12 +34,12 @@ s.fillna(method='bfill') #fills the null values with the last known value form b
 
 #### Finding unique values
 
-`df.['Sex'].unique()` shows how many different values are
-`df.['Sex'].value_counts()` shows how many values are and counts them
+`df['Sex'].unique()` shows how many different values are
+`df['Sex'].value_counts()` shows how many values are and counts them
 
 - Replacing
-`df.['Sex'].replace('D', 'F')` replaces the D with F
-`df.['Sex'].replace({'D' : 'F' , 'N' : 'M'})` replace the D with F and N with M
+`df['Sex'].replace('D', 'F')` replaces the D with F
+`df['Sex'].replace({'D' : 'F' , 'N' : 'M'})` replace the D with F and N with M
 
 #### Duplications
 
@@ -53,7 +53,7 @@ s.fillna(method='bfill') #fills the null values with the last known value form b
 
 #### Splitting columns
 
-`df.['Data'].str.split('_')` Splits the values that are separated by an underscore
-`df.['Data'].str.split('_')` Creates a DataFrame form a series
+`df['Data'].str.split('_')` Splits the values that are separated by an underscore
+`df['Data'].str.split('_')` Creates a DataFrame form a series
 
 
