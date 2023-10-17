@@ -10,7 +10,7 @@
 - cut `x`
 - paste `v`
 - copy `c`
-
+- switch between tabs `CTRL + SHIFT + ]`
 
 
 
